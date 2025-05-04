@@ -1,0 +1,23 @@
+{
+  "name": "dialogue-wheel-component",
+  "version": "1.0.1",
+  "description": "A configurable 3D-style dialogue wheel web component.",
+  "main": "dialogue-wheel.js",
+  "type": "module",
+  "files": [
+    "dialogue-wheel.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web component",
+    "custom element",
+    "dialogue",
+    "ui",
+    "wheel"
+  ],
+  "author": "cube3",
+  "license": "MIT"
+}

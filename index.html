@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialogue Wheel</title>
+  <script src="dialogue-wheel-component/dialogue-wheel.js"></script>
+  <!-- Include dat.GUI library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .selection-info {
+      margin-top: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 5px;
+      max-width: 400px;
+      text-align: center;
+    }
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dialogue Wheel</h1>
+
+  <div id="dialoguePrompt" style="margin-bottom: 20px; font-style: italic; max-width: 500px; text-align: center;">
+    "You see the guard approaching. He looks suspicious."
+  </div>
+  
+  <dialogue-wheel id="dialogueWheel"></dialogue-wheel>
+  
+  <div class="selection-info" id="selectionInfo">
+    Select an option from the wheel above
+  </div>
+
+  <!-- Include the dat.GUI integration script -->
+  <script src="dat-gui-integration.js"></script>
+</body>
+</html>
